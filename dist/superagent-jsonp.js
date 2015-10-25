@@ -30,7 +30,7 @@ var callbackWrapper = function callbackWrapper(data) {
 
 var end = function end(callback) {
   this._jsonp = {
-    callbackParam: 'callback',
+    callbackParam: 'c',
     callbackName: 'superagentCallback' + new Date().valueOf() + parseInt(Math.random() * 1000),
     callback: callback
   };
